@@ -2,11 +2,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import NavbarMenu from './navbarMenu'
 
 const Navbar = () => {
   return (
-    <div className=" flex flex-row w-full h-15 items-center justify-between overflow-hidden">
-      <div className="hover:bg-black hover:shadow-3xl h-full p-2 rounded-r-full ">
+    <div className=" flex flex-row w-full items-center justify-between">
+      <div className="hover:bg-black hover:shadow-3xl h-full p-2 rounded-r-full">
         <Link
           href="/"
           className="flex flex-row mr-2 pl-0 items-center justify-center"
@@ -17,8 +18,7 @@ const Navbar = () => {
           <h1 className="text-violet-400 font-medium text-lg">Trade.in</h1>
         </Link>
       </div>
-
-      <div>menu</div>
+      <NavbarMenu/>
       <div>search</div>
       <div>signIN</div>
     </div>
