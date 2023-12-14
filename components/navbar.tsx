@@ -8,7 +8,7 @@ import { Button } from './ui/button'
 
 const Navbar = () => {
   return (
-    <div className=" flex flex-row w-full items-center justify-between">
+    <div className="fixed flex flex-row w-full items-center justify-between bg-[#111827] text-white opacity-90 z-50">
       <div className="hover:cursor-pointer w-1/2 hover:shadow-3xl h-full md:w-1/5 p-2 rounded-r-full">
         <Link
           href="/"
@@ -26,7 +26,7 @@ const Navbar = () => {
         <NavbarMenu />
         <SearchBar />
         <Button variant="premium" className="rounded-full mx-12">
-         Sign In
+          Sign In
         </Button>
       </div>
     </div>

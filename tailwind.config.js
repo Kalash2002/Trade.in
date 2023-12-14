@@ -16,6 +16,9 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        text: "text 5s ease infinite",
+      },
       boxShadow: {
         "3xl": "-20px 25px 40px -30px rgb(190, 63, 245)",
       },
@@ -68,6 +71,16 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
+        text: {
+          "0%, 100%": {
+            "background-size": "200% 200%",
+            "background-position": "left center",
+          },
+          "50%": {
+            "background-size": "200% 200%",
+            "background-position": "right center",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -80,5 +93,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("tailwind-scrollbar-hide")],
 };
